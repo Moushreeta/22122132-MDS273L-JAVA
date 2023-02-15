@@ -11,7 +11,7 @@ public class lab3work{
         for (int i = 0; i < array.length; i++) {
             sum+=array[i];
         }
-        double mean=(double)sum/(double)array.length;
+        double mean=(double)sum/(double)array.length;//finding the average or mean
         return mean;
     }
 
@@ -19,7 +19,7 @@ public class lab3work{
         Arrays.sort(array);
         int n=array.length;
         if (n % 2 != 0)
-            return (double)array[n / 2];
+            return (double)array[n / 2];//finding the median
  
         return (double)(array[(n - 1) / 2] + array[n / 2]) / 2.0;
     }
