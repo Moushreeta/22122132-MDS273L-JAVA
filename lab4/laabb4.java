@@ -66,6 +66,10 @@ public class laabb4 {
             System.out.println("Transactions: ");
             transactions();
             break;
+        case 4:
+            System.out.println("Account summary");
+            summary();
+            break;
         }
     }
 }
