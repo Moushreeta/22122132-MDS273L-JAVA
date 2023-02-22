@@ -1,1 +1,1 @@
-![Alt text](lab4 "Title")
+![Alt text](lab4.jpg "Title")
