@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-class lab5{
+public class lab5{
     
     int reg_no;
     String name;
@@ -11,7 +11,7 @@ class lab5{
     static Scanner sc=new Scanner(System.in);
     
     
-    public student(int reg_no,String name,String email,int phone,int studentClass,String dept){
+    public lab5(int reg_no,String name,String email,int phone,int studentClass,String dept){
         this.reg_no=reg_no;
         this.name=name;
         this.email=email;
@@ -19,7 +19,7 @@ class lab5{
         this.studentClass=studentClass;
         this.dept=dept;
     }
-    static student addstudent(){
+    static lab5 addstudent(){
         System.out.println("Enter Student Registration number:");
             int reg_no=sc.nextInt();
             System.out.println("Enter Student name:");
@@ -35,7 +35,7 @@ class lab5{
             System.out.println("Enter Student department:");
             String dept=sc.nextLine();
             sc.next();
-            student student1=new student(reg_no, name, email, phone, studentClass, dept);
+            lab5 student1=new lab5(reg_no, name, email, phone, studentClass, dept);
             return student1;
     }
     static String searchstudent(){
@@ -75,7 +75,7 @@ class lab5{
         System.out.println("Department="+dept);
     }
     public static void main(String[] args) {
-    student studentArray[]=new student[100];
+    lab5 studentArray[]=new lab5[100];
     
     System.out.println("1 to Add a student");
     System.out.println("2 to Search for a student");
@@ -85,7 +85,7 @@ class lab5{
     sc.nextLine();
     switch(choice){
         case 1:
-            student newStudent=addstudent();
+            lab5 newStudent=addstudent();
             studentArray[0]=newStudent;
         case 2:
             searchstudent();
