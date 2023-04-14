@@ -6,7 +6,7 @@ public class lab7{
     static int nrow = -1;
     
     public static void Mean(String[][] data){
-        double setosa_sepal_lengthhhhh = 0;
+        double setosa_sepal_length = 0;
         double setosa_sepal_width = 0;
         double setosa_petal_length = 0;
         double setosa_petal_width = 0;
@@ -20,7 +20,7 @@ public class lab7{
         double virginica_petal_width = 0;
 
         for(int i = 1; i <= 50; i++){
-            setosa_sepal_lengthhhhh +=  Double.parseDouble(data[i][1]);
+            setosa_sepal_length +=  Double.parseDouble(data[i][1]);
             setosa_sepal_width +=  Double.parseDouble(data[i][2]);
             setosa_petal_length +=  Double.parseDouble(data[i][3]);
             setosa_petal_width +=  Double.parseDouble(data[i][4]);
@@ -38,9 +38,9 @@ public class lab7{
             virginica_petal_width +=  Double.parseDouble(data[i][4]);
         }
         
-        System.out.println("----------------Mode------------------")        
+        System.out.println("Mode")        
         System.out.println("Iris-setosa: ");
-        System.out.println(data[0][1] + ": " + setosa_sepal_lengthhhhh/50);
+        System.out.println(data[0][1] + ": " + setosa_sepal_length/50);
         System.out.println(data[0][2] + ": " + setosa_sepal_width/50);
         System.out.println(data[0][3] + ": " + setosa_petal_length/50);
         System.out.println(data[0][4] + ": " + setosa_petal_width/50 + "\n");
@@ -153,7 +153,7 @@ public class lab7{
         Mean(data);               
 
       
-        double[] setosa_sepal_lengthhhhh = new double[51];
+        double[] setosa_sepal_length = new double[51];
         double[] setosa_sepal_width = new double[51];
         double[] setosa_petal_length = new double[51];
         double[] setosa_petal_width = new double[51];
@@ -193,50 +193,50 @@ public class lab7{
             
         }
         
-        Arrays.sort(setosa_sepal_lengthhhh);
-        Arrays.sort(setosa_sw);
-        Arrays.sort(setosa_pl);
-        Arrays.sort(setosa_pw);
-        Arrays.sort(versicolor_sl);
-        Arrays.sort(versicolor_sw);
-        Arrays.sort(versicolor_pl);
-        Arrays.sort(versicolor_pw);
-        Arrays.sort(virginica_sl);
-        Arrays.sort(virginica_sw);
+        Arrays.sort(setosa_sepal_length);
+        Arrays.sort(setosa_sepal_width);
+        Arrays.sort(setosa_petal_length);
+        Arrays.sort(setosa_petal_width);
+        Arrays.sort(versicolor_sepal_length);
+        Arrays.sort(versicolor_sepal_width);
+        Arrays.sort(versicolor_petal_length);
+        Arrays.sort(versicolor_petal_width);
+        Arrays.sort(virginica_sepal_length);
+        Arrays.sort(virginica_sepal_width);
         Arrays.sort(virginica_petal_length);
         Arrays.sort(virginica_petal_width);
 
         
         System.out.println("Median");
         System.out.println("Setosa: ");
-        Median(setosa_sepal_lengthhhh, setosa_sw, setosa_pl, setosa_pw);
+        Median(setosa_sepal_length, setosa_sepal_width, setosa_petal_length, setosa_petal_width);
         System.out.println("versicolor: ");
-        Median(versicolor_sl, versicolor_sw, versicolor_pl, versicolor_pw);
+        Median(versicolor_sepal_length, versicolor_sepal_width, versicolor_petal_length, versicolor_petal_width);
         System.out.println("virginica: ");
-        Median(virginica_sl, virginica_sw, virginica_petal_length, virginica_petal_width);
+        Median(virginica_sepal_length, virginica_sepal_length, virginica_petal_length, virginica_petal_width);
 
         System.out.println("Mode");
         System.out.println("Setosa: ");
-        Mode(setosa_sepal_lengthhhh, setosa_sw, setosa_pl, setosa_pw);
+        Mode(setosa_sepal_length, setosa_sepal_width, setosa_petal_length, setosa_petal_width);
         System.out.println("versicolor: ");
-        Mode(versicolor_sl, versicolor_sw, versicolor_pl, versicolor_pw);
+        Mode(versicolor_sepal_length, versicolor_sepal_width, versicolor_petal_length, versicolor_petal_width);
         System.out.println("virginica: ");
         Mode(virginica_sl, virginica_sw, virginica_petal_length, virginica_petal_width);
 
         System.out.println("Min-");
         System.out.println("Setosa: ");
-        Min(setosa_sepal_lengthhhh, setosa_sw, setosa_pl, setosa_pw);
+        Min(setosa_sepal_length, setosa_sepal_width, setosa_petal_length, setosa_petal_width);
         System.out.println("versicolor: ");
-        Min(versicolor_sl, versicolor_sw, versicolor_pl, versicolor_pw);
+        Min(versicolor_sepal_length, versicolor_sepal_width, versicolor_petal_length, versicolor_petal_width);
         System.out.println("virginica: ");
-        Min(virginica_sl, virginica_sw, virginica_petal_length, virginica_petal_width);
+        Min(virginica_sepal_length, virginica_sepal_width, virginica_petal_length, virginica_petal_width);
 
         System.out.println("Max");
         System.out.println("Setosa: ");
-        Max(setosa_sepal_lengthhhh, setosa_sw, setosa_pl, setosa_pw);
+        Max(setosa_sepal_length, setosa_sepal_width, setosa_petal_length, setosa_petal_width);
         System.out.println("versicolor: ");
-        Max(versicolor_sl, versicolor_sw, versicolor_pl, versicolor_pw);
+        Max(versicolor_sepal_length, versicolor_sepal_width, versicolor_petal_length, versicolor_petal_width);
         System.out.println("virginica: ");
-        Max(virginica_sl, virginica_sw, virginica_petal_length, virginica_petal_width);
+        Max(virginica_sepal_length, virginica_sepal_width, virginica_petal_length, virginica_petal_width);
     }
 }
